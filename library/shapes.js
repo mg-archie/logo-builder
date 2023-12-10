@@ -54,4 +54,4 @@ function renderLogoShape(answers) {
   }
 }
 
-module.exports = renderLogoShape;
+module.exports = { renderLogoShape, Triangle, Square, Circle };
