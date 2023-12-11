@@ -1,9 +1,8 @@
-// packages needed for this application
+//packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { renderLogoShape } = require('./library/shapes');
-
-
+//questions for user for input
 const questions = [
   {
     type: 'input',
@@ -27,7 +26,7 @@ const questions = [
     name: 'shapeCol',
   },
 ];
-
+//prompt, user answers, write file
 inquirer.prompt(questions).then(answers => {
   const fileSvg = renderLogoShape(answers);
   fs.writeFile('logo.svg', fileSvg, function (err) {

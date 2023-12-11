@@ -53,5 +53,5 @@ function renderLogoShape(answers) {
     return triangle.render();
   }
 }
-
+//exports to index and test file
 module.exports = { renderLogoShape, Triangle, Square, Circle };
